@@ -1,8 +1,6 @@
 ﻿Console.Clear();
 Console.WriteLine ("Введите пятизначное число: ");
 int number = int.Parse(Console.ReadLine()!);
-int signsNumbers = number;
-int i = 0;
 
 if (number < 10000 || number > 100000)
 {
