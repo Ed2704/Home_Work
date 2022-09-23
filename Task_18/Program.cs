@@ -1,22 +1,23 @@
-﻿Console.Write("Введите номер координатной четверти: ");
-int X = int.Parse(Console.ReadLine()!);
+﻿Console.Clear();
 
-if (X ==1)
-{
-    Console.WriteLine("Х > 0 и Y > 0");
-}
+Console.Write("Введите число ");
+string num = Console.ReadLine();
 
-if (X ==2)
+switch(num)
 {
-    Console.WriteLine("Х < 0 и Y > 0");
-}
-
-if (X ==3)
-{
-    Console.WriteLine("Х < 0 и Y < 0");
-} 
-
-if (X ==4)
-{
-    Console.WriteLine("Х > 0 и Y < 0");
+    case "1":
+        Console.WriteLine("x > 0, y > 0");
+        break;
+    case "2":
+        Console.WriteLine("x < 0, y > 0");
+        break;
+    case "3":
+        Console.WriteLine("x < 0, y < 0");
+        break;
+    case "4":
+        Console.WriteLine("x > 0, y < 0");
+        break;
+    default:
+        Console.WriteLine("Введено некорректное число");
+        break;
 }
