@@ -7,17 +7,15 @@
 */
 
 Console.Clear();
- 
+
 int arrayLenght = 8;
 int[] array = new int[arrayLenght];
  
 CreateArray(array);
 PrintArray(array);
- 
- 
- 
+  
 void CreateArray(int[] array)
-{
+{   
     Random randGenerator = new Random();
     for (int i = 0; i < array.Length; i++)
     {
