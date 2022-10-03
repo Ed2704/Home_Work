@@ -12,8 +12,8 @@ double[] array = ParseToArray(input);
 
 
 double res = DiffMaxMin(array);
-Console.WriteLine("Разница между максимальным и минимальным элементов массива  " + res);
-
+Console.Write("Разница между максимальным и минимальным элементов массива  ");
+Console.Write ("{0:0.00}", res);
 
 double DiffMaxMin(double[] arr)
 {
