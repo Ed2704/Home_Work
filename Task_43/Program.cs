@@ -17,12 +17,12 @@ Console.WriteLine("Введите k2: ");
 double k2 = double.Parse(Console.ReadLine()!);
 
 double[] point = IntersectionLine(b1, k1, b2, k2);
-Console.WriteLine(point[0] + " ; " + point[1]);
+Console.WriteLine(point[0] + " " + point[1]);
 
 double[] IntersectionLine(double b1, double k1, double b2, double k2)
 {
-    double[] res = new double [2];
-    res[0] = (b2-b1)/(k1-k2);
-    res[1] = k1*(b2-b1)/(k1-k2)+b1;
+    double[] res = new double[2];
+    res[0] = (b2 - b1) / (k1 - k2);
+    res[1] = k1 * (b2 - b1) / (k1 - k2) + b1;
     return res;
 }
