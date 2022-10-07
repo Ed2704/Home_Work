@@ -29,15 +29,15 @@ double DiffMaxMin(double[] arr)
     return diff;
 }
 
-double[] ParseToArray(string str)
-{
-    string[] stringArray = str.Split(" ");
-    double[] result = new double[stringArray.Length];
- 
-    for (int i = 0; i < stringArray.Length; i++)
+    double[] ParseToArray(string str)
     {
-        result[i] = double.Parse(stringArray[i]);
+        string[] stringArray = str.Split(" ");
+        double[] result = new double[stringArray.Length];
+    
+        for (int i = 0; i < stringArray.Length; i++)
+        {
+            result[i] = double.Parse(stringArray[i]);
+        }
+    
+        return result;
     }
- 
-    return result;
-}
