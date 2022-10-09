@@ -18,14 +18,14 @@ Console.WriteLine();
 Console.Write("Среднее арифметическое каждого столбца:  ");
 
 
-for (int j = 0; j < array.GetLongLength(1); j++)
+for (int j = 0; j < array.GetLength(1); j++)
 {
     double sumColumn = 0;
-    for (int i = 0; i < array.GetLongLength(0); i++)
+    for (int i = 0; i < array.GetLength(0); i++)
     {
         sumColumn = sumColumn + array[i,j]; 
     }
-    double averege = sumColumn / array.GetLongLength(0); 
+    double averege = sumColumn / array.GetLength(0); 
     Console.Write("{0:0.0}  ", averege);
 }
     
