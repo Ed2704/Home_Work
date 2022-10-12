@@ -30,10 +30,6 @@ int[,] MatrixProduct(int[,] matrix1, int[,] matrix2)
     return result;
 }
 
-
-
-
-
 void FillArray(int[,] array)
 {
     Random generator = new Random();
