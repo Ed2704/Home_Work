@@ -7,19 +7,25 @@ M = 4; N = 8. -> 30 */
 
 Console.Clear();
 
-Console.Write("Введите два положительных значения через Enter: ");
-int m = int.Parse (Console.ReadLine()!);
-int n = int.Parse (Console.ReadLine()!);
+Console.WriteLine("Введите 2 положительных числа M и N через Enter:");
+int m = int.Parse(Console.ReadLine()!);
+int n = int.Parse(Console.ReadLine()!);
+int temp = m;
+if (m > n)
+{
+    m = n;
+    n = temp;
+}
 
-SumIntegers(m,n);
+Console.Write($"Сумма в промежутке между {m} и {n} равна: {SumIntegers(m, n)}");
 
 int SumIntegers(int m, int n)
 {
     int sum = 0;
-    for (int i = m; i < n; i++)
+
+    if (n >= m)
     {
-        
+        sum = n + SumIntegers(m, n - 1);
     }
     return sum;
 }
-
