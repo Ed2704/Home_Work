@@ -8,14 +8,22 @@ N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1" */
 Console.Clear();
 
 Console.Write("Введите число болше 1: ");
-int x = int.Parse (Console.ReadLine()!);
+int x = int.Parse(Console.ReadLine()!);
 Integers(x);
 
 void Integers(int n)
 {
-    for (int i = n; i > 0; i--)
+    if (n > 0)
     {
-        if(i>1) Console.Write($"{i}, ");
-        else Console.Write($"{i}");
+        if (n > 1)
+        {
+            Console.Write($"{n}, ");
+            Integers(n - 1);
+        }
+        else
+        {
+            Console.Write($"{n}");
+            Integers(n - 1);
+        }
     }
 }
